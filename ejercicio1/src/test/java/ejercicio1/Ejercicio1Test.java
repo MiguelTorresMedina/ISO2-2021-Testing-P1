@@ -13,7 +13,7 @@ public class Ejercicio1Test {
 	}
 	@Test
 	public void testMain() {
-		fail("Not yet implemented");
+		e.main(null);
 	}
 
 	@Test
