@@ -19,28 +19,28 @@ public class Ejercicio1 {
 		String opcion = "";
 		if(sano && !sintomas && !contacto && cartillaVacunacion) {
 			if(temperatura < 0 && humedad < 15 && (nieve || lluvia)) {
-				opcion = "Casa";
+				opcion = "Casa.";
 			}
 			else if(temperatura < 0 && humedad < 15 && !(nieve || lluvia) && aforoEsqui) {
-				opcion = "Esquiar";
+				opcion = "Esquiar.";
 			}
 			else if((0 <= temperatura &&  temperatura < 15) && !lluvia && aforoSenderismo) {
-				opcion = "Senderismo";
+				opcion = "Senderismo.";
 			}
 			else if((15 <= temperatura &&  temperatura < 25) && !lluvia && !nublado && humedad < 60 && !restricciones) {
-				opcion = "Turismo";
+				opcion = "Turismo.";
 			}
 			else if((25 <= temperatura &&  temperatura < 35) && !lluvia && aforoBar) {
-				opcion = "Irse de cañas";
+				opcion = "Irse de cañas.";
 			}
 			else if(temperatura > 30 && !lluvia) {
 				opcion = "Playa";
 				if(aforoPiscina) {
-					opcion += "o piscina";
+					opcion += "o piscina.";
 				}
 			}
 		}
-		else opcion = "No hay opcion";
+		else opcion = "No hay opcion.";
 		return opcion;
 	}
 }
