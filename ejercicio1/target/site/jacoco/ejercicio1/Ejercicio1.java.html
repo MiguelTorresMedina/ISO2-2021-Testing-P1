@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JunitExample Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">ejercicio1</a> &gt; <span class="el_source">Ejercicio1.java</span></div><h1>Ejercicio1.java</h1><pre class="source lang-java linenums">package ejercicio1;
+
+<span class="fc" id="L3">public class Ejercicio1 {</span>
+	
+	
+	public static void main(String[] args) {
+		
+<span class="fc" id="L8">		boolean sano = true, sintomas = true, contacto = true, cartillaVacunacion = true, nieve = true, lluvia = true, aforoEsqui = true,</span>
+<span class="fc" id="L9">				aforoSenderismo = true, nublado = true, restricciones = true, aforoBar = true, aforoPiscina = true;</span>
+<span class="fc" id="L10">		int temperatura = 0, humedad = 0;</span>
+<span class="fc" id="L11">		String opcion = obtenerPlan(sano, sintomas, contacto, cartillaVacunacion, nieve,</span>
+				lluvia, aforoEsqui, aforoSenderismo, nublado, restricciones, aforoBar, aforoPiscina, temperatura, humedad);
+<span class="fc" id="L13">		System.out.println(&quot;La opcion recomendada es: &quot; +opcion);</span>
+<span class="fc" id="L14">	}</span>
+	
+	public static String obtenerPlan(boolean sano, boolean sintomas, boolean contacto, boolean cartillaVacunacion, boolean nieve,
+			boolean lluvia, boolean aforoEsqui, boolean aforoSenderismo, boolean nublado, boolean restricciones, boolean aforoBar,
+			boolean aforoPiscina, int temperatura, int humedad) {
+<span class="fc" id="L19">		String opcion = &quot;&quot;;</span>
+<span class="pc bpc" id="L20" title="2 of 8 branches missed.">		if(sano &amp;&amp; !sintomas &amp;&amp; !contacto &amp;&amp; cartillaVacunacion) {</span>
+<span class="pc bpc" id="L21" title="2 of 8 branches missed.">			if(temperatura &lt; 0 &amp;&amp; humedad &lt; 15 &amp;&amp; (nieve || lluvia)) {</span>
+<span class="fc" id="L22">				opcion = &quot;Casa&quot;;</span>
+			}
+<span class="pc bpc" id="L24" title="4 of 10 branches missed.">			else if(temperatura &lt; 0 &amp;&amp; humedad &lt; 15 &amp;&amp; !(nieve || lluvia) &amp;&amp; aforoEsqui) {</span>
+<span class="fc" id="L25">				opcion = &quot;Esquiar&quot;;</span>
+			}
+<span class="pc bpc" id="L27" title="3 of 8 branches missed.">			else if((0 &lt;= temperatura &amp;&amp;  temperatura &lt; 15) &amp;&amp; !lluvia &amp;&amp; aforoSenderismo) {</span>
+<span class="fc" id="L28">				opcion = &quot;Senderismo&quot;;</span>
+			}
+<span class="pc bpc" id="L30" title="5 of 12 branches missed.">			else if((15 &lt;= temperatura &amp;&amp;  temperatura &lt; 25) &amp;&amp; !lluvia &amp;&amp; !nublado &amp;&amp; humedad &lt; 60 &amp;&amp; !restricciones) {</span>
+<span class="fc" id="L31">				opcion = &quot;Turismo&quot;;</span>
+			}
+<span class="pc bpc" id="L33" title="3 of 8 branches missed.">			else if((25 &lt;= temperatura &amp;&amp;  temperatura &lt; 35) &amp;&amp; !lluvia &amp;&amp; aforoBar) {</span>
+<span class="fc" id="L34">				opcion = &quot;Irse de ca�as&quot;;</span>
+			}
+<span class="pc bpc" id="L36" title="2 of 4 branches missed.">			else if(temperatura &gt; 30 &amp;&amp; !lluvia) {</span>
+<span class="fc" id="L37">				opcion = &quot;Playa&quot;;</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">				if(aforoPiscina) {</span>
+<span class="fc" id="L39">					opcion += &quot;o piscina&quot;;</span>
+				}
+			}
+		}
+<span class="fc" id="L43">		else opcion = &quot;No hay opcion&quot;;</span>
+<span class="fc" id="L44">		return opcion;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.38.0" timestamp="2021-12-23T01:32:16.042">
+<file name="/home/alvvvr/git/ISO2-2021-Testing-P1/ejercicio1/src/main/java/ejercicio1/Ejercicio1.java">
+<violation beginline="27" endline="27" begincolumn="13" endcolumn="49" rule="UselessParentheses" ruleset="Code Style" package="ejercicio1" class="Ejercicio1" method="obtenerPlan" externalInfoUrl="https://pmd.github.io/pmd-6.38.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="30" endline="30" begincolumn="13" endcolumn="50" rule="UselessParentheses" ruleset="Code Style" package="ejercicio1" class="Ejercicio1" method="obtenerPlan" externalInfoUrl="https://pmd.github.io/pmd-6.38.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="33" endline="33" begincolumn="13" endcolumn="50" rule="UselessParentheses" ruleset="Code Style" package="ejercicio1" class="Ejercicio1" method="obtenerPlan" externalInfoUrl="https://pmd.github.io/pmd-6.38.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>
